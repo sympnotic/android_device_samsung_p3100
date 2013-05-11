@@ -229,7 +229,8 @@ on post-fs-data
     chown system system /data/gps
 
 #Change permission for backlight and lcd
-    chown system system /sys/class/backlight/panel/brightness
+    chown system system /sys/class/backlight/panel/
+    chmod 0666 /sys/class/backlight/panel/brightness
     chown system radio /sys/class/lcd/panel/lcd_type
     chown system radio /sys/class/lcd/panel/lcd_power
 
